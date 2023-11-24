@@ -22,6 +22,7 @@ export const cadastrarEvento = async (evento: Evento): Promise<Evento> => {
     }
    };
    export const atualizarEvento = async (evento: Evento): Promise<Evento> => {
+    console.log("Eu entrei aqui atualizarEvento");
     try {
     const response = await axios.put<Evento>(
     `${BASE_URL}/sessions/${evento.id}`, evento);

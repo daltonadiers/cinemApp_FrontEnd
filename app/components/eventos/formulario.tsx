@@ -10,9 +10,9 @@ interface FormularioProps {
 }
 export default function Formulario(props: FormularioProps) {
     const id = props.evento?.id
-    const [nome, setNome] = useState(props.evento?.nome)
+    const [nome, setNome] = useState(props.evento?.filmname)
     const [data, setData] = useState(props.evento?.data)
-    const [descricao, setDescricao] = useState(props.evento?.descricao)
+    const [descricao, setDescricao] = useState(props.evento?.description)
     const [status, setStatus] = useState(props.evento?.status)
 
     return (<div>

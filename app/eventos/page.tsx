@@ -58,6 +58,7 @@ export default function Eventos() {
          }
         }
         async function alterarEvento(evento: Evento) {
+          console.log("Cheguei no alterar1");
             try {
             const eventoAtualizado = await atualizarEvento(evento);
             setVisivel("tabela");
@@ -90,7 +91,7 @@ export default function Eventos() {
                             eventoExcluido={eventoExcluido}></Tabela>
                     </>
                 ) : (<Formulario evento={evento}
-                    eventoMudou={salvarEvento}
+                    eventoMudou={salvarOuAlterarEvento}
                     cancelado={() => setVisivel('tabela')} />
                    )}
             </Layout>

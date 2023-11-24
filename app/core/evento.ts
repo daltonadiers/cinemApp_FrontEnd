@@ -2,16 +2,16 @@ import { stringParaEntradaDeData } from "@/utils/converters";
 
 export default class Evento{
     id: number | null;
-    nome: string;
+    filmname: string;
     data: string;
-    descricao: string;
+    description: string;
     status: string;
 
-constructor(id: number | null, nome: string, data: string, descricao:string, status: string){
+constructor(id: number | null, filmname: string, data: string, description:string, status: string){
         this.id= id;
-        this.nome = nome;
+        this.filmname = filmname;
         this.data = data;
-        this.descricao = descricao;
+        this.description = description;
         this.status = status;
      }
      static geraEventosMock() {

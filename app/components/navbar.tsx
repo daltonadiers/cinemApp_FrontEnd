@@ -11,6 +11,6 @@ return (
  <a href="/" className="text-lg no-underline hover:text-amber-300 ml-2">
  Home</a>
  <a href="/eventos" className="text-lg no-underline hover:text-amber-300 ml-2">
- Eventos</a></div>
+ Sessões</a></div>
  </nav>
 </>);}
